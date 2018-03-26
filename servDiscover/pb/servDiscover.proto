@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package pb;
+
+
+// The greeting service definition.
+service GetVer {
+    // Sends a greeting
+    rpc Getvers (GPRCRequest) returns (GPRCReply) {}
+//    rpc PrimeFactors (stream GPRCRequest) returns (stream GPRCReply) {}
+}
+
+// The request message containing the user's name.
+message GPRCRequest {
+    int32 getver = 1;         //运行软件版本
+}
+
+// The response message containing the greetings
+message GPRCReply {
+    //    repeated KV kvs = 1;
+    string softver = 1;
+    string softname = 2;
+}
