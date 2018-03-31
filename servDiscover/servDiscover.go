@@ -1,7 +1,7 @@
 package servDiscover
 
 import (
-	"goutils/servDiscover/pb"
+	"github.com/wudaoluo/goutils/servDiscover/pb"
 	"context"
 	"net"
 	"google.golang.org/grpc"
