@@ -2,7 +2,6 @@ package serial
 
 import (
 	"fmt"
-	"flag"
 )
 
 // Nodes is a custom flag Var representing a list of etcd nodes.
@@ -27,7 +26,7 @@ go run node_var.go -node=127.0.0.1:6789 -node=127.0.0.1:1234
 
 
 func main() {
-	var nodes             Nodes
+	s
 	flag.Var(&nodes, "node", "list of backend nodes")
 	flag.Parse()
 
